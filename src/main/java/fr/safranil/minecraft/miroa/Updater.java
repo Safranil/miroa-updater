@@ -207,6 +207,8 @@ public class Updater extends Application {
         int seek = 0, readed;
         byte[] buffer;
 
+        boolean updateGUI = true;
+
         if (len > 0) {
             while (seek < len) {
                 buffer = new byte[8192];
@@ -214,8 +216,8 @@ public class Updater extends Application {
                 if (readed > 0)
                     outputStream.write(buffer, 0, readed);
                 seek += readed;
-                int finalSeek = seek;
-                PlatformImpl.runAndWait(() -> controller.progress.setProgress(finalSeek/len));
+                double percent = (double)seek/len;
+                PlatformImpl.runLater(() -> controller.progress.setProgress(percent));
             }
         }
         outputStream.flush();
