@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Safranil\IdeaProjects\miroa-updater\target\miroa-updater-1.0-SNAPSHOT-jar-with-dependencies.jar</jar>
+  <outfile>C:\Users\Safranil\IdeaProjects\miroa-updater\target\launcher.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Safranil\IdeaProjects\miroa-updater\Minecraft.ico</icon>
+  <singleInstance>
+    <mutexName>fr_safranil_minecraft_miroa_updater</mutexName>
+    <windowTitle>Miroa Updater</windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0_00</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <initialHeapSize>80</initialHeapSize>
+    <maxHeapSize>150</maxHeapSize>
+  </jre>
+</launch4jConfig>
